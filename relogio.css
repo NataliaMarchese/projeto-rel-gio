@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #1a1a2e; /* Fundo escuro moderno */
+    color: #0f3460;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-relogio {
+    background-color: #0f3460; /* Fundo do display */
+    padding: 30px 60px;
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.1);
+    border: 1px solid #e94560; /* Borda sutil de destaque */
+}
+
+#relogio {
+    font-size: 5rem; /* Tamanho grande e legível */
+    font-weight: bold;
+    color: #e94560; /* Cor vermelha vibrante (neon/futurista) */
+    text-shadow: 0 0 10px #e94560, 0 0 20px #e9456044; /* Efeito de brilho neon */
+    letter-spacing: 3px; /* Espaçamento entre os caracteres */
+    display: block;
+}
+
+/* Opcional: Adiciona uma animação sutil nos dois pontos (:) */
+#relogio::before {
+    content: '';
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
